@@ -26,4 +26,8 @@ public class ClassroomService {
     public Classroom findById(Long id) {
         return classroomRepository.findById(id).orElse(null);
     }
+
+    public void delete(Long id) {
+        classroomRepository.deleteById(id);
+    }
 }
