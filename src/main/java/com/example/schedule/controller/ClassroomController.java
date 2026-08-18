@@ -21,6 +21,7 @@ public class ClassroomController {
         return classroomService.create(classroom);
     }
 
+
     @GetMapping
     public List<Classroom> findAll() {
         return classroomService.findAll();
