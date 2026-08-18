@@ -30,4 +30,9 @@ public class ClassroomController {
     public Classroom finById(@PathVariable Long id){
         return classroomService.findById(id);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        classroomService.delete(id);
+    }
 }
