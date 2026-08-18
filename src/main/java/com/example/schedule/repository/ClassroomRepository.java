@@ -1,4 +1,7 @@
 package com.example.schedule.repository;
 
-public class ClassroomRepository {
+import com.example.schedule.entity.Classroom;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ClassroomRepository  extends JpaRepository<Classroom, Long> {
 }
