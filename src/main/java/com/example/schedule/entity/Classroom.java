@@ -19,11 +19,11 @@ public class Classroom {
     private String shift;
 
     @ManyToOne
-    @JoinColumn(name = "teacher_id", nullable = false)
+    @JoinColumn(name = "teacher_id") //nullable = false)
     private Teacher teacher;
 
     @ManyToOne
-    @JoinColumn(name = "discipline_id", nullable = false)
+    @JoinColumn(name = "discipline_id") //nullable = false)
     private Discipline discipline;
 
     public Classroom() {
