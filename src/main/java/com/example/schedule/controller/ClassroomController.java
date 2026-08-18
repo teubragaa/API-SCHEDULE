@@ -21,9 +21,13 @@ public class ClassroomController {
         return classroomService.create(classroom);
     }
 
-
     @GetMapping
     public List<Classroom> findAll() {
         return classroomService.findAll();
+    }
+
+    @GetMapping
+    public Classroom finByUd(@PathVariable Long id){
+        return classroomService.findById(id);
     }
 }
